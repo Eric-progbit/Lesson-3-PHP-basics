@@ -135,6 +135,40 @@ var_dump($x != $y);
 var_dump($x !== $y);
 
 
-//Pushing to the same repository where one file lesson was edited
+//Pushing to the same repository where one file lesson_3.php was edited
+//emobilis@emobilis-OptiPlex-780:/opt/lampp/htdocs/MITEVENINGCLASS/Lesson_1$ git status
+//On branch master
+//Your branch is up-to-date with 'origin/master'.
+//
+//Changes not staged for commit:
+//  (use "git add <file>..." to update what will be committed)
+//  (use "git checkout -- <file>..." to discard changes in working directory)
+//
+//        modified:   Lesson_3.php
+//
+//no changes added to commit (use "git add" and/or "git commit -a")
+//emobilis@emobilis-OptiPlex-780:/opt/lampp/htdocs/MITEVENINGCLASS/Lesson_1$ git add .
+//emobilis@emobilis-OptiPlex-780:/opt/lampp/htdocs/MITEVENINGCLASS/Lesson_1$ git status
+//On branch master
+//Your branch is up-to-date with 'origin/master'.
+//
+//Changes to be committed:
+//  (use "git reset HEAD <file>..." to unstage)
+//
+//        modified:   Lesson_3.php
+//emobilis@emobilis-OptiPlex-780:/opt/lampp/htdocs/MITEVENINGCLASS/Lesson_1$ git commit -m 'Added comparison operators'
+//[master 0904e3b] Added comparison operators
+// 1 file changed, 49 insertions(+), 5 deletions(-)
+//emobilis@emobilis-OptiPlex-780:/opt/lampp/htdocs/MITEVENINGCLASS/Lesson_1$ git push
+//Username for 'https://github.com': Eric-progbit
+//Password for 'https://Eric-progbit@github.com':
+//Counting objects: 3, done.
+//Delta compression using up to 2 threads.
+//Compressing objects: 100% (3/3), done.
+//Writing objects: 100% (3/3), 1.71 KiB | 1.71 MiB/s, done.
+//Total 3 (delta 0), reused 0 (delta 0)
+//To https://github.com/Eric-progbit/Lesson-3-PHP-basics.git
+//   c625f5e..0904e3b  master -> master
+
 
 ?>
