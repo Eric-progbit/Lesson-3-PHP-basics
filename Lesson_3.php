@@ -87,10 +87,54 @@ echo $x;
 //Initialised empty Git repository in /opt/lampp/htdocs/MITEVENINGCLASS/Lesson_1/.git/
 //emobilis@emobilis-OptiPlex-780:/opt/lampp/htdocs/MITEVENINGCLASS/Lesson_1$
 //emobilis@emobilis-OptiPlex-780:/opt/lampp/htdocs/MITEVENINGCLASS/Lesson_1$ git add .
-//git add. adds all files and folders
+//(git add. adds all files and folders to staging area)
+//emobilis@emobilis-OptiPlex-780:/opt/lampp/htdocs/MITEVENINGCLASS/Lesson_1$ git status
+//On branch master
+//
+//No commits yet
+//
+//Changes to be committed:
+//  (use "git rm --cached <file>..." to unstage)
+//
+//        new file:   Lesson_2.php
+//        new file:   Lesson_3.php
+//        new file:   lesson_1.php
+
+//emobilis@emobilis-OptiPlex-780:/opt/lampp/htdocs/MITEVENINGCLASS/Lesson_1$ git commit -m "Initial Commit"
+//[master (root-commit) c625f5e] Initial Commit
+// 3 files changed, 226 insertions(+)
+// create mode 100644 Lesson_2.php
+// create mode 100644 Lesson_3.php
+// create mode 100644 lesson_1.php
+//git commit -m to put files at commit stage, you can make changes even at this stage then
+//do git add to add that specific file that you have made changes on
+//emobilis@emobilis-OptiPlex-780:/opt/lampp/htdocs/MITEVENINGCLASS/Lesson_1$
+//emobilis@emobilis-OptiPlex-780:/opt/lampp/htdocs/MITEVENINGCLASS/Lesson_1$ git remote add origin https://github.com/Eric-progbit/Lesson-3-PHP-basics.git
+//emobilis@emobilis-OptiPlex-780:/opt/lampp/htdocs/MITEVENINGCLASS/Lesson_1$ git push -u origin master
+//Username for 'https://github.com': Eric-progbit
+//Password for 'https://Eric-progbit@github.com':
+//Counting objects: 5, done.
+//Delta compression using up to 2 threads.
+//Compressing objects: 100% (5/5), done.
+//Writing objects: 100% (5/5), 1.99 KiB | 1.99 MiB/s, done.
+//Total 5 (delta 0), reused 0 (delta 0)
+//To https://github.com/Eric-progbit/Lesson-3-PHP-basics.git
+// * [new branch]      master -> master
+//Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+//Comparison operators:
+//Everytime you deal with a comparison operator you deal with a data type called boolean which states
+//whether it is true or false
+//Equal(==): returns true if $x is equal to $y
+var_dump($x == $y);
+//Identical (===): returns true if $x and $y are equal and are of the same datatype
+var_dump($x === $y);
+//Not equal (!=) returns true if $x is not equal to $y
+var_dump($x != $y);
+//Not identical (!==) returns true if $x is not equal to $y and they are not identical
+var_dump($x !== $y);
 
 
-
-
+//Pushing to the same repository where one file lesson was edited
 
 ?>
